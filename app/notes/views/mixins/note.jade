@@ -1,0 +1,17 @@
+include ../../../tasks/views/mixins/task
+
+mixin renderNote(note)
+  ul.collection.with-header(id="#{note._id}")
+    li.collection-header
+      .note-actions
+        i.material-icons#edit_note edit
+        i.material-icons#add_task add
+        i.material-icons.red#delete_note delete_forever
+      h4
+        .flow-text=note.title
+        input(type='hidden' name="note_title" value="#{note.title}")
+    if note.tasks
+      each task in note.tasks
+        +renderTask(task)      
+            
+   

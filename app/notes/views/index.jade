@@ -1,0 +1,16 @@
+extends ../../views/layouts/app
+include mixins/note
+
+block content 
+  .note-create-container
+    .input-field.col.s12.note-title
+      input(id="note_title", name="title" type="text")
+      label(for="note_title") Take a note
+    a#create_note.btn-floating.btn-large.waves-effect.waves-light.indigo
+      i.material-icons add
+  if notes     
+    .note-container
+      each note in notes
+        +renderNote(note)
+  script(src="js/noteActions.js")
+  script(src="js/taskActions.js")

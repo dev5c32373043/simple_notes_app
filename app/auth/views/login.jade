@@ -1,0 +1,15 @@
+extends ../../views/layouts/app
+
+block content
+  .card-panel
+    form.row.s12(action="/login", method="post")
+      input(type="hidden" name="_csrf" value="#{csrf}")
+      .input-field.col.s12
+        input(id="nickname", type="text", name="nickname", class="validate")
+        label(for="nickname") nickname
+      .input-field.col.s12
+        input(id="password", type="password", name="password", class="validate")
+        label(for="password") password
+      .input-field.col.s12
+        button.waves-effect.indigo.btn(type="submit") Login
+        a.waves-effect.indigo.btn.right(href="/sign_up") Sign Up

@@ -1,0 +1,61 @@
+@import '/css/note.css';
+@import '/css/task.css';
+
+body {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+ }
+
+.material-icons{
+  cursor: pointer;
+}
+
+.red{
+  color: red;
+  background-color: transparent !important;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.page-footer{
+  background-color: transparent;
+}
+
+.brand-logo{
+  width: 64px;
+  height: 64px;
+  background-image: url('/images/logo.svg');
+}
+
+.card-panel{
+  max-width: 430px;
+  margin-left: 31%;
+}
+
+input[type="text"]:not(.browser-default):focus, input[type="text"]:not(.browser-default):focus:not([readonly])+label{
+  color: #3f51b5 !important;
+}
+
+.input-field input[type=text]:focus {
+     border-bottom: 1px solid #3f51b5 !important;
+     box-shadow: 0 1px 0 0 #3f51b5 !important;
+     margin-top: 14% !important;
+}
+
+.create-link{
+  float: right;
+  width: 25%;
+}
+
+ul{
+  max-width: 30%;
+  min-width: 23%;
+}
+
+.collection{
+  margin-right: 1rem;
+}

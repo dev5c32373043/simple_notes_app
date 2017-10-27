@@ -1,0 +1,11 @@
+#task_text{
+  max-width: 75%;
+}
+
+.task{
+  margin: 0 !important;
+}
+
+.task-link{
+  font-size: 40px;
+}

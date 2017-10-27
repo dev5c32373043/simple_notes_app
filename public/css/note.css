@@ -1,0 +1,30 @@
+.note-create-container{
+  display: flex;
+  position: fixed;
+  right: 25px;
+  bottom: 75px;
+  z-index: 99;
+}
+
+.note-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+}
+
+.note-actions{
+  position: absolute;
+  top: 0;
+  right: 0;
+  user-select: none;
+}
+
+.note-title{
+  width: 75%;
+  margin-top: 0;
+  background-color: white;
+}
+
+i#create_note{
+  margin-left: 25%;
+}

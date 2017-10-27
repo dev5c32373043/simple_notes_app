@@ -1,0 +1,7 @@
+mixin renderTask(task)
+  li.collection-item(id="#{task._id}")
+    div
+      input(type="checkbox" id="state-#{task._id}", checked=task.status != 'Active' ? true : false)
+      label(for="state-#{task._id}") #{task.text}
+      .secondary-content
+        i#delete_task.material-icons.red delete_forever
