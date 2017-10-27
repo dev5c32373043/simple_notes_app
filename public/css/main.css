@@ -16,21 +16,6 @@ body {
   background-color: transparent !important;
 }
 
-footer {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-}
-.page-footer{
-  background-color: transparent;
-}
-
-.brand-logo{
-  width: 64px;
-  height: 64px;
-  background-image: url('/images/logo.svg');
-}
-
 .card-panel{
   max-width: 430px;
   margin-left: 31%;
@@ -41,9 +26,8 @@ input[type="text"]:not(.browser-default):focus, input[type="text"]:not(.browser-
 }
 
 .input-field input[type=text]:focus {
-     border-bottom: 1px solid #3f51b5 !important;
-     box-shadow: 0 1px 0 0 #3f51b5 !important;
-     margin-top: 14% !important;
+  border-bottom: 1px solid #3f51b5 !important;
+  box-shadow: 0 1px 0 0 #3f51b5 !important;
 }
 
 .create-link{

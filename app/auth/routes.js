@@ -32,7 +32,6 @@ module.exports = (app, User, passport)=>{
               }else{
                 req.login(user, (error)=> {
                   if (error) console.log(error)
-                  console.log("PASSSS", req.user)
                   res.redirect('/');
                 });
               }

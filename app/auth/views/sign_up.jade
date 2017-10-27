@@ -13,3 +13,6 @@ block content
       .input-field.col.s12
         button.waves-effect.indigo.btn(type="submit") Sign Up
         a.waves-effect.indigo.btn.right(href="/login") Back
+  if message
+    script.
+      Materialize.toast("#{message}", 4000);      
